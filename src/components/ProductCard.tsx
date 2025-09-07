@@ -16,16 +16,18 @@ interface ProductCardProps {
 
 const ProductCard = ({ product }: ProductCardProps) => {
   const handleWhatsAppPurchase = () => {
-    const adminNumber = "2347041545267"; // Nigerian format
+    const adminNumber = "2348132976651"; // Nigerian format
     const message = `Hi! I'm interested in purchasing:
 Product: ${product.name}
 Product ID: ${product.id}
 Price: ₦${product.price.toLocaleString()}
 
 Please let me know about availability and payment options.`;
-    
-    const whatsappUrl = `https://wa.me/${adminNumber}?text=${encodeURIComponent(message)}`;
-    window.open(whatsappUrl, '_blank');
+
+    const whatsappUrl = `https://wa.me/${adminNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(whatsappUrl, "_blank");
   };
 
   return (
@@ -45,7 +47,7 @@ Please let me know about availability and payment options.`;
           <p className="text-sm text-muted-foreground mb-1">ID: {product.id}</p>
           <p className="text-sm text-muted-foreground">{product.category}</p>
         </div>
-        
+
         <div className="flex items-center justify-between">
           <span className="text-xl font-bold text-primary">
             ₦{product.price.toLocaleString()}
@@ -53,8 +55,7 @@ Please let me know about availability and payment options.`;
           <Button
             onClick={handleWhatsAppPurchase}
             className="bg-gradient-primary hover:opacity-90 transition-opacity flex items-center space-x-2"
-            size="sm"
-          >
+            size="sm">
             <MessageCircle className="w-4 h-4" />
             <span>Buy Now</span>
           </Button>
