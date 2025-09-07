@@ -47,6 +47,14 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Adire design tokens
+        adire: {
+          purple: "hsl(var(--adire-purple))",
+          blue: "hsl(var(--adire-blue))",
+          gold: "hsl(var(--adire-gold))",
+          rose: "hsl(var(--adire-rose))",  
+          earth: "hsl(var(--adire-earth))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +70,15 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        'gradient-primary': 'var(--gradient-primary)',
+        'gradient-warm': 'var(--gradient-warm)',
+        'gradient-soft': 'var(--gradient-soft)',
+      },
+      boxShadow: {
+        'elegant': 'var(--shadow-elegant)',
+        'soft': 'var(--shadow-soft)',
       },
       keyframes: {
         "accordion-down": {
