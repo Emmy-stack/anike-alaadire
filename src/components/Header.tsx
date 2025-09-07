@@ -45,7 +45,7 @@ const Header = ({
             {/* <a href="#" className="text-foreground hover:text-primary transition-colors">Shop</a>
             <a href="#" className="text-foreground hover:text-primary transition-colors">About</a> */}
             <a
-              href="https://api.whatsapp.com/send/?phone=2347041545267&text=Hi%21+I%27m+interested+in+purchasing.&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=2348132976651&text=Hi%21+I%27m+interested+in+purchasing.&type=phone_number&app_absent=0"
               className="text-foreground hover:text-primary transition-colors">
               Contact
             </a>
@@ -118,7 +118,7 @@ const Header = ({
               {/* <a href="#" className="block text-foreground hover:text-primary transition-colors">Shop</a>
               <a href="#" className="block text-foreground hover:text-primary transition-colors">About</a> */}
               <a
-                href="https://api.whatsapp.com/send/?phone=2347041545267&text=Hi%21+I%27m+interested+in+purchasing.&type=phone_number&app_absent=0"
+                href="https://api.whatsapp.com/send/?phone=2348132976651&text=Hi%21+I%27m+interested+in+purchasing.&type=phone_number&app_absent=0"
                 className="block text-foreground hover:text-primary transition-colors">
                 Contact
               </a>
