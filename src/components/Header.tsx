@@ -9,7 +9,11 @@ interface HeaderProps {
   isAdmin?: boolean;
 }
 
-const Header = ({ searchQuery, onSearchChange, isAdmin = false }: HeaderProps) => {
+const Header = ({
+  searchQuery,
+  onSearchChange,
+  isAdmin = false,
+}: HeaderProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -33,10 +37,18 @@ const Header = ({ searchQuery, onSearchChange, isAdmin = false }: HeaderProps) =
 
           {/* Desktop Navigation */}
           <nav className="hidden lg:flex items-center space-x-8">
-            <a href="#" className="text-foreground hover:text-primary transition-colors">Home</a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">Shop</a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">About</a>
-            <a href="#" className="text-foreground hover:text-primary transition-colors">Contact</a>
+            <a
+              href="#"
+              className="text-foreground hover:text-primary transition-colors">
+              Home
+            </a>
+            {/* <a href="#" className="text-foreground hover:text-primary transition-colors">Shop</a>
+            <a href="#" className="text-foreground hover:text-primary transition-colors">About</a> */}
+            <a
+              href="https://api.whatsapp.com/send/?phone=2347041545267&text=Hi%21+I%27m+interested+in+purchasing.&type=phone_number&app_absent=0"
+              className="text-foreground hover:text-primary transition-colors">
+              Contact
+            </a>
           </nav>
 
           {/* Search Bar */}
@@ -64,15 +76,18 @@ const Header = ({ searchQuery, onSearchChange, isAdmin = false }: HeaderProps) =
             <Button variant="ghost" size="icon" className="relative">
               <ShoppingBag className="w-5 h-5" />
             </Button>
-            
+
             {/* Mobile Menu Button */}
             <Button
               variant="ghost"
               size="icon"
               className="lg:hidden"
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-            >
-              {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              onClick={() => setIsMenuOpen(!isMenuOpen)}>
+              {isMenuOpen ? (
+                <X className="w-5 h-5" />
+              ) : (
+                <Menu className="w-5 h-5" />
+              )}
             </Button>
           </div>
         </div>
@@ -95,10 +110,18 @@ const Header = ({ searchQuery, onSearchChange, isAdmin = false }: HeaderProps) =
         {isMenuOpen && (
           <div className="lg:hidden border-t border-border bg-background">
             <nav className="py-4 space-y-4">
-              <a href="#" className="block text-foreground hover:text-primary transition-colors">Home</a>
-              <a href="#" className="block text-foreground hover:text-primary transition-colors">Shop</a>
-              <a href="#" className="block text-foreground hover:text-primary transition-colors">About</a>
-              <a href="#" className="block text-foreground hover:text-primary transition-colors">Contact</a>
+              <a
+                href="#"
+                className="block text-foreground hover:text-primary transition-colors">
+                Home
+              </a>
+              {/* <a href="#" className="block text-foreground hover:text-primary transition-colors">Shop</a>
+              <a href="#" className="block text-foreground hover:text-primary transition-colors">About</a> */}
+              <a
+                href="https://api.whatsapp.com/send/?phone=2347041545267&text=Hi%21+I%27m+interested+in+purchasing.&type=phone_number&app_absent=0"
+                className="block text-foreground hover:text-primary transition-colors">
+                Contact
+              </a>
               {isAdmin && (
                 <div className="flex items-center bg-primary/10 text-primary px-3 py-2 rounded-lg text-sm font-medium w-fit">
                   <User className="w-4 h-4 mr-2" />

@@ -37,7 +37,7 @@ const HeroSection = () => {
             <Button 
               variant="outline" 
               size="lg" 
-              className="border-white text-white hover:bg-white hover:text-black transition-colors text-lg px-8 py-3"
+              className="border-white text-black hover:bg-white hover:text-black transition-colors text-lg px-8 py-3"
             >
               Learn About Adire
             </Button>
