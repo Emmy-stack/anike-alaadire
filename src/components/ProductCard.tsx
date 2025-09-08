@@ -16,7 +16,7 @@ interface ProductCardProps {
 
 const ProductCard = ({ product }: ProductCardProps) => {
   const handleWhatsAppPurchase = () => {
-    const adminNumber = "2348132976651"; // Nigerian format
+    const adminNumber = "2348142679647"; // Nigerian format
     const message = `Hi! I'm interested in purchasing:
 Product: ${product.name}
 Product ID: ${product.id}
