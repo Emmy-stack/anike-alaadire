@@ -13,6 +13,18 @@ import product12 from "@/assets/product-12.jpg";
 import product13 from "@/assets/product-13.jpg";
 import product14 from "@/assets/product-14.jpg";
 import product15 from "@/assets/product-15.jpg";
+import product16 from "@/assets/product-16.jpg";
+import product17 from "@/assets/product-17.jpg";
+import product18 from "@/assets/product-18.jpg";
+import product19 from "@/assets/product-19.jpg";
+import product20 from "@/assets/product-20.jpg";
+import product21 from "@/assets/product-21.jpg";
+import product22 from "@/assets/product-22.jpg";
+import product23 from "@/assets/product-23.jpg";
+import product24 from "@/assets/product-24.jpg";
+import product25 from "@/assets/product-25.jpg";
+import product26 from "@/assets/product-26.jpg";
+import product27 from "@/assets/product-27.jpg";
 
 export interface Product {
   id: string;
@@ -143,7 +155,103 @@ export const products: Product[] = [
     image: product15,
     category: "Shirts",
     featured: true,
-  }
+  },
+  {
+    id: "ADR016",
+    name: "Modern Adire Shirt",
+    price: 30000,
+    image: product16,
+    category: "Shirts",
+    featured: true,
+  },
+  {
+    id: "ADR017",
+    name: "Modern Adire Shirt",
+    price: 30000,
+    image: product17,
+    category: "Shirts",
+    featured: true,
+  },
+  {
+    id: "ADR018",
+    name: "Modern Adire Shirt",
+    price: 30000,
+    image: product18,
+    category: "Shirts",
+    featured: true,
+  },
+  {
+    id: "ADR019",
+    name: "Modern Adire Shirt",
+    price: 30000,
+    image: product19,
+    category: "Shirts",
+    featured: true,
+  },
+  {
+    id: "ADR020",
+    name: "Modern Adire Shirt",
+    price: 30000,
+    image: product20,
+    category: "Shirts",
+    featured: true,
+  },
+  {
+    id: "ADR021",
+    name: "Modern Adire Shirt",
+    price: 30000,
+    image: product21,
+    category: "Shirts",
+    featured: true,
+  },
+  {
+    id: "ADR022",
+    name: "Modern Adire Shirt",
+    price: 30000,
+    image: product22,
+    category: "Shirts",
+    featured: true,
+  },
+  {
+    id: "ADR023",
+    name: "Modern Adire Shirt",
+    price: 30000,
+    image: product23,
+    category: "Shirts",
+    featured: true,
+  },
+  {
+    id: "ADR024",
+    name: "Modern Adire Shirt",
+    price: 30000,
+    image: product24,
+    category: "Shirts",
+    featured: true,
+  },
+  {
+    id: "ADR025",
+    name: "Modern Adire Shirt",
+    price: 30000,
+    image: product15,
+    category: "Shirts",
+    featured: true,
+  },
+  {
+    id: "ADR015",
+    name: "Modern Adire Shirt",
+    price: 30000,
+    image: product25,
+    category: "Shirts",
+    featured: true,
+  },
+  {
+    id: "ADR026",
+    name: "Modern Adire Shirt",
+    price: 30000,
+    image: product27,
+    category: "Shirts",
+    featured: true,
+  },
 ];
 
 export const getFeaturedProducts = () => products.filter(product => product.featured);
