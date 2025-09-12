@@ -243,7 +243,7 @@ export const products: Product[] = [
     id: "ADR026",
     name: "Customized Modern Adire Top",
     price: 30000,
-    image: product25,
+    image: product26,
     category: "Tops, Shirts",
     featured: true,
   },
